@@ -1,6 +1,6 @@
 
  
-# Source Codes - Zhirrr's API
+# Source Codes - XYZ's API
 <p align="center">
 <a href="#"><img title="api zeeoneofc" src="https://img.shields.io/badge/zeeoneofc Api-blue?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
@@ -32,10 +32,6 @@ Atau
 ```js
 if(apikey != 'MASUKAN_NAMA_APIKEY') return res.json(loghandler.invalidKey)
 ```
-<h1 align="center"> Cara Deploy Ada Di YouTube Saya
-<p align="center">
-  <a href="https://youtu.be/TyNPsf_x0qE"><img src="https://img.shields.io/badge/-Youtube-red?style=flat-square&logo=youtube" /> <br>
-  
 </p>
 
 
