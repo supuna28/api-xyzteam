@@ -7,6 +7,11 @@ router.get('/', (req, res) => {
     res.sendFile(__path + '/views/home.html')
 })
 
+router.get('/register', (req, res) => {
+    res.sendFile(__path + '/views/home/index.html')
+})
+
+
 router.get('/api', (req, res) => {
     res.sendFile(__path + '/views/index.html')
 })
