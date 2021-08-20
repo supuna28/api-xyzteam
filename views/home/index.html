@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form OTP</title>
+</head>
+<body>
+
+<form id="salsa" method="POST" accept-charset="utf-8">
+    <center>
+    <label for="Nomer">Nomer</label> <input placeholder="62812xxxx" name="nomer" type="number" id="nomer" required/>
+	<br>
+	<label for="OTP">OTP</label> <input name="otp" type="number" id="otp"/>
+	<br>
+    <br>
+    <button type="submit" id="btn-otp" >Request otp</button>
+    <br>
+    <br>
+    <button type="submit" id="btn-login" >Login</button>
+    </center>
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script>
+$("#btn-login").click(function(){
+$.ajax({
+    url: "proses.php",
+    type: "post",
+    data: $('#salsa').serialize(),
+    success: function (response) {
+        alert(response);
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+       console.log(textStatus, errorThrown);
+    }
+});
+return false;
+});
+
+$("#btn-otp").click(function(){
+$.ajax({
+    url: "req-otp.php",
+    type: "post",
+    data: $('#salsa').serialize(),
+    success: function (response) {
+        alert(response);
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+       console.log(textStatus, errorThrown);
+    }
+});
+return false;
+});
+</script>
+</body>
+</html>
